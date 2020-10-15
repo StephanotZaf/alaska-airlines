@@ -1,0 +1,531 @@
+//
+// Main Style
+//
+
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 1: Initialize
+@import "init";
+
+// 2: Bootstrap framework includes
+@import "../../../tools/node_modules/bootstrap/scss/bootstrap";
+
+// 3: Components
+@import
+    "components/utilities",
+    "components/burger-icon",
+    "components/card",
+    "components/wizard",
+    "components/type",
+    "components/breadcrumb",
+    "components/nav",
+    "components/alert",
+    "components/buttons",
+    "components/code",
+    "components/dropdown",
+    "components/forms",
+    "components/grid",
+    "components/modal",
+    "components/progress",
+    "components/table",
+    "components/popover",
+    "components/tooltip",
+    "components/accordion",
+    "components/datatable",
+    "components/checkbox",
+    "components/radio",
+    "components/switch",
+    "components/option",
+    "components/dialog",
+    "components/strikethrough",
+    "components/separator",
+    "components/image-input",
+    "components/label",
+    "components/loader",
+    "components/symbol",
+    "components/pulse",
+    "components/page-loader",
+    "components/quick-search",
+    "components/scrolltop",
+    "components/spinner",
+    "components/sticky-toolbar",
+    "components/svg-icon",
+    "components/svg",
+    "components/timeline",
+    "components/timeline-2",
+    "components/timeline-3",
+    "components/timeline-4",
+    "components/timeline-5",
+    "components/timeline-6",
+    "components/overlay",
+    "components/wave",
+    "components/list",
+    "components/bullet",
+    "components/navi",
+    "components/ribbon",
+    "components/offcanvas",
+    "components/toggle";
+
+// 4: Plugins
+@import
+    "vendors/plugins/formvalidation",
+    "vendors/plugins/blockui",
+    "vendors/plugins/bootstrap-datepicker",
+    "vendors/plugins/bootstrap-daterangepicker",
+    "vendors/plugins/tempusdominus-bootstrap-4",
+    "vendors/plugins/bootstrap-markdown",
+    "vendors/plugins/bootstrap-maxlength",
+    "vendors/plugins/bootstrap-notify",
+    "vendors/plugins/bootstrap-select",
+    "vendors/plugins/bootstrap-session-timeout",
+    "vendors/plugins/bootstrap-switch",
+    "vendors/plugins/bootstrap-timepicker",
+    "vendors/plugins/bootstrap-touchspin",
+    "vendors/plugins/ckeditor",
+    "vendors/plugins/datatables",
+    "vendors/plugins/dropzone",
+    "vendors/plugins/duallistbox",
+    "vendors/plugins/fontawesome5",
+    "vendors/plugins/fullcalendar",
+    "vendors/plugins/gmaps",
+    "vendors/plugins/ion-range-slider",
+    "vendors/plugins/jquery-repeater",
+    "vendors/plugins/jqvmap",
+    "vendors/plugins/jstree",
+    "vendors/plugins/kanban",
+    "vendors/plugins/nouislider",
+    "vendors/plugins/perfect-scrollbar",
+    "vendors/plugins/quill",
+    "vendors/plugins/recaptcha",
+    "vendors/plugins/select2",
+    "vendors/plugins/summernote",
+    "vendors/plugins/sweetalert2",
+    "vendors/plugins/tagify",
+    "vendors/plugins/tinymce",
+    "vendors/plugins/toastr",
+    "vendors/plugins/typeahead",
+    "vendors/plugins/uppy",
+    "vendors/plugins/draggable",
+    "vendors/plugins/prismjs",
+    "vendors/plugins/apexcharts",
+    "vendors/plugins/leaflet";
+
+
+// 5: Layout
+@import "layout/init";
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY ABOVE INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+
+
+/*--------------------------------------------------*/
+/*--------------------------------- BACKGROUND -----*/
+/*--------------------------------------------------*/
+body {
+  background: #F7F7F7;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  @media (max-width: '992px'){
+    background-position: top left;
+    background-size: 120%;
+  }
+  @media (max-width: '768px'){
+    background-position: top left;
+    background-size: 135%;
+  }
+  @media (max-width: '576px'){
+    background-position: 10% 0%;
+    background-size: 270%;
+  }
+}
+
+
+/*--------------------------------------------------*/
+/*------------------------------------ BUTTONS -----*/
+/*--------------------------------------------------*/
+
+.btn{
+  padding: 0.65rem .7rem !important;
+}
+
+
+/*--------------------------------------------------*/
+/*----------------- CHART . Customer Sentiment -----*/
+/*--------------------------------------------------*/
+.apexcharts-canvas{
+  top: 70px !important;
+}
+
+
+
+/*--------------------------------------------------*/
+/*-------------------------------- CLIENT CARD -----*/
+/*--------------------------------------------------*/
+@media (max-width: 992px){
+  .card-client-xs{
+    margin-top: 50px;
+    .card-client-info{
+      padding-top: 9rem !important;
+    }
+    .card-client-image{
+      position: absolute;
+      width: calc(100% - 4.5rem);
+      top: -55px;
+    }
+  }
+  .navi {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex !important;
+    //margin-right: 1rem;
+    .navi-item{
+      display: flex !important;
+      width: 22%;
+      min-width: 22%;
+      .navi-link{
+        white-space: break-spaces;
+        padding: 0.75rem 1rem;
+        border: solid 1px #f3f6f9;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  .card-client-xs{
+    margin-top: 50px;
+    .card-client-info{
+      padding-top: 9rem !important;
+    }
+    .card-client-image{
+      position: absolute;
+      width: calc(100% - 4.5rem);
+      top: -55px;
+    }
+  }
+  .navi {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex !important;
+    //margin-right: 1rem;
+    .navi-item{
+      display: flex !important;
+      width: 30%;
+      min-width: 30%;
+      .navi-link{
+        white-space: break-spaces;
+        padding: 0.75rem 1rem;
+        border: solid 1px #f3f6f9;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+@media (max-width: 576px){
+  .card-client-xs{
+    margin-top: 50px;
+    .card-client-info{
+      padding-top: 9rem !important;
+    }
+    .card-client-image{
+      position: absolute;
+      width: calc(100% - 4.5rem);
+      top: -55px;
+    }
+  }
+  .navi {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex !important;
+    //margin-right: 1rem;
+    .navi-item{
+      display: flex !important;
+      width: 43%;
+      min-width: 43%;
+      .navi-link{
+        white-space: break-spaces;
+        padding: 0.75rem 1rem;
+        border: solid 1px #f3f6f9;
+        margin-right: .5rem;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1200px){
+  .container{
+    width: 100% !important;
+    //padding: 10px !important;
+    max-width: 100% !important;
+  }
+}
+
+
+/*--------------------------------------------------*/
+/*--------------------------------------- FONT -----*/
+/*--------------------------------------------------*/
+/*
+h6, span{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+*/
+
+
+/*--------------------------------------------------*/
+/*------------------------------------- HEADER -----*/
+/*--------------------------------------------------*/
+.header .header-logo .logo-default, .header .header-logo .logo-sticky {
+  height: 50px;
+}
+
+@media (min-width: 992px){
+  .header-fixed[data-header-scroll="on"] .header {
+    background-image: url("https://resource.alaskaair.net/-/media/2C9D3EAFA16A4F098B9837773D1BCC2D");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #01426a;
+  }
+  body[data-header-scroll="on"] .topbar .btn.btn-icon .text-white {
+    color: #fff !important;
+  }
+}
+
+
+/*--------------------------------------------------*/
+/*---------------------------------- ICON SVG ------*/
+/*--------------------------------------------------*/
+.btn .svg-icon {
+  margin-right: 0rem !important;
+}
+
+
+/*--------------------------------------------------*/
+/*---------------------------------- LABEL BOX -----*/
+/*--------------------------------------------------*/
+.label.label-inline.label-lg {
+  padding: 0.9rem 0.5rem;
+}
+
+
+/*--------------------------------------------------*/
+/*-------------------------------- TEXT COLORS -----*/
+/*--------------------------------------------------*/
+.text-tertiary {
+  color: #00c7e6 !important;
+}
+
+
+
+/*--------------------------------------------------*/
+/*----------------------------------- TIMELINE -----*/
+/*--------------------------------------------------*/
+
+.timeline.timeline-6{
+  &:before {
+    content: '';
+    position: absolute;
+    left: 1px;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    background-color: #EBEDF3;
+  }
+  .timeline-item {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+
+/*--------------------------------------------------*/
+/*--------------------------------- SPEEDOMETER ----*/
+/*--------------------------------------------------*/
+
+/*
+#score-meter-1{
+  width: 300px;
+  height: 150px;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  overflow: hidden;
+  position: relative;
+}
+#scorer-1-inner-div{
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 60%;
+  height: 60%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+#scorer-1-inner-div-2{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  background-color: #F64E60 ;
+  transform-origin: bottom center;
+  transform: rotate(-124deg);
+  z-index: 0;
+  .svg-icon{
+    bottom: 33px;
+    right: 24px;
+    position: absolute;
+    transform: rotate(124deg);
+  }
+}
+#scorer-1-inner-div-3{
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  background-color: #1bc5bd;
+  transform-origin: bottom center;
+  transform: rotate(124deg);
+  z-index: 0;
+  .svg-icon{
+    position: absolute;
+    bottom: 37px;
+    left: 29px;
+    transform: rotate(-124deg);
+  }
+}
+#scorer-1-inner-div-4{
+  position: absolute;
+  left: 50px;
+  top: -2px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 170px solid #0074c8;
+  transform: rotate(180deg);
+  .svg-icon{
+    position: absolute;
+    top: 117px;
+    left: -16px;
+    transform: rotate(-180deg);
+  }
+}
+.scorer-1-tick {
+  position: absolute;
+  top: 40%;
+  left: -250%;
+  width: 300%;
+  height: 5px;
+  background-color: #01426a;
+  -webkit-animation-name: ticker-mover-1;
+  animation-name: ticker-mover-1;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: inherit;
+  animation-iteration-count: inherit;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+#scorer-1-inner-div-5{
+  position: absolute;
+  left: 45%;
+  top: 80%;
+  width: 10%;
+  height: 20%;
+  border-radius: 50%;
+  background-color: #01426a;
+  z-index: 2;
+  transform: rotate(120deg);
+}
+
+@keyframes ticker-mover-1 {
+  0% {
+    transform-origin: right center;
+    transform: rotate(0deg);
+  }
+  33% {
+    transform-origin: right center;
+    transform: rotate(120deg);
+  }
+  66% {
+    transform-origin: right center;
+    transform: rotate(120deg);
+  }
+  100% {
+    transform-origin:right center;
+    transform: rotate(120deg);
+  }
+}
+*/
+
+
+/*--------------------------------------------------*/
+/*------------------------ STICKY RIGHT SIDEBAR ----*/
+/*--------------------------------------------------*/
+.sticky-toolbar {
+  top: 50%;
+}
+
+
+
+
+/*--------------------------------------------------*/
+/*--------------------------------- TYPOGRAPHY -----*/
+/*--------------------------------------------------*/
+@font-face{
+  font-family:'AS Circular';
+  src:url('https://resource.alaskaair.net/-/media/4E8D77C0D7A8411AB9C351C1EFF86681.woff2') format("woff2"),
+  url('https://resource.alaskaair.net/-/media/CAAEEC88586944808EDE9B36A3460098.woff') format("woff");
+  font-weight:100;
+  font-style:normal;
+  font-display:fallback
+}
+  
+@font-face{
+  font-family:'AS Circular';
+  src:url('https://resource.alaskaair.net/-/media/4E8D77C0D7A8411AB9C351C1EFF86681.woff2') format("woff2"),
+  url('https://resource.alaskaair.net/-/media/CAAEEC88586944808EDE9B36A3460098.woff') format("woff");
+  font-weight:200;
+  font-style:normal;
+  font-display:fallback
+}
+  
+@font-face{
+  font-family:'AS Circular';
+  src:url('https://resource.alaskaair.net/-/media/4E8D77C0D7A8411AB9C351C1EFF86681.woff2') format("woff2"),
+  url('https://resource.alaskaair.net/-/media/CAAEEC88586944808EDE9B36A3460098.woff') format("woff");
+  font-style:normal;
+  font-display:fallback
+}
+
+@font-face{
+  font-family:'AS Circular';
+  src:url('https://resource.alaskaair.net/-/media/1DD02F55437F4346B7EF7D5A08326D71.woff2') format("woff2"),
+  url('https://resource.alaskaair.net/-/media/2339807B68A344348447336D15035425.woff') format("woff");
+  font-weight:400;
+  font-style:normal;
+  font-display:fallback
+}
